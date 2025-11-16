@@ -1089,3 +1089,18 @@ body {
         padding: 1.5rem;
     }
 }
+
+/* ============================================
+   ACCESIBILIDAD - Respeto a Movimiento Reducido
+   WCAG 2.1 Nivel AA - Criterio 2.3.3
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001s !important;
+        scroll-behavior: auto !important;
+    }
+}
